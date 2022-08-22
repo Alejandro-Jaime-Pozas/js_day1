@@ -7,11 +7,12 @@
 */
 
 
-let exerciseOneArr = [1, 2, 3, 4, 5, 6, 7, 8, 10]
+let exerciseOneArr = [1, 2, 3, 5, 6, 7]
 
 // need a for loop; for num, check if prev_num == num -1;
 // start at index 1, not index 0
 
+// ASK ABOUT RETURN STMT, ASK ABOUT NaN how to account for that for the first index 0 in for loop...
 for (let i in exerciseOneArr){
     if (exerciseOneArr[i] - exerciseOneArr[i-1] > 1){
         console.log(i);
@@ -37,8 +38,23 @@ Output: 26
 
 Note: if there is nothing to sum, the sum is default to 0.
 */
+console.log('EXERCISE 2 ---------------')
 
 let numbers1 = [10, 12, -9, 3, -1, 0, 15] 
+var total = 0;
+for (i = 0; i < numbers1.length; i++){
+    if (numbers1[i] > 0){
+        total += numbers1[i]
+    }
+}
+console.log(total)
 
 
 let numbers2 = [3, 5, 7, 9, -10, 2, -22, -1] 
+var total = 0;
+for (i = 0; i < numbers2.length; i++){
+    if (numbers2[i] > 0){
+        total += numbers2[i]
+    }
+}
+console.log(total)
